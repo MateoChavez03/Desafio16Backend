@@ -18,7 +18,7 @@ router.get('/info', (req, res) => {
         folder: process.cwd(),
         environment: process.env.ENVIRONMENT || "development",
         port: process.env.PORT || 8080,
-        mode: process.env.PORT || "FORK"
+        mode: process.env.MODE || "FORK"
     })
 })
 
