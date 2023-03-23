@@ -4,7 +4,7 @@ import randomsRouter from './routes/randoms.router.js';
 import cluster from 'cluster';
 import os from 'os';
 
-const CPUs = os.cpus().length;
+const CPUs = 4;
 const MODE = process.env.MODE || "FORK"
 const app = express();
 let PORT = process.env.PORT || 8080
