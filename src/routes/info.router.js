@@ -17,7 +17,8 @@ router.get('/info', (req, res) => {
         memory: process.memoryUsage().rss,
         folder: process.cwd(),
         environment: process.env.ENVIRONMENT || "development",
-        port: process.env.PORT || 8080
+        port: process.env.PORT || 8080,
+        mode: process.env.PORT || "FORK"
     })
 })
 
